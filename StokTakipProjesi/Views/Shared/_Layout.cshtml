@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - REÇETE360</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+ 
+    <style>
+        body {
+            background-color: 
+            font-family: 'Segoe UI', sans-serif;
+            
+        }
+
+        .navbar {
+            background-color: #c2185b;
+        }
+
+            .navbar a {
+                color: white !important;
+                font-weight: 500;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+                .navbar a:hover {
+                    background-color: #ad1457;
+                    border-radius: 5px;
+                }
+
+        .navbar-brand i {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .footer {
+            background-color: #c2185b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-home"></i> Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Urunler"><i class="fas fa-box-open"></i> Ürünler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Recete"><i class="fas fa-prescription-bottle-alt"></i> Reçete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Rapor"><i class="fas fa-chart-bar"></i> Rapor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Iletisim"><i class="fas fa-envelope"></i> İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ✅ Sayfa içeriği -->
+    <div class="container main-content">
+        @RenderBody()
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="footer">
+        © 2025 REÇETE360 - Tüm hakları saklıdır.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

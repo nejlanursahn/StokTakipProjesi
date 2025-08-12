@@ -1,0 +1,16 @@
+﻿@model Urun
+
+@if (Model != null)
+{
+    <form asp-action="Guncelle">
+        @Html.HiddenFor(m => m.Id)
+        <p>Ad: @Html.TextBoxFor(m => m.Ad)</p>
+        <p>Stok: @Html.TextBoxFor(m => m.Stok)</p>
+        <p>Fiyat: @Html.TextBoxFor(m => m.Fiyat)</p>
+        <input type="submit" value="Güncelle" />
+    </form>
+}
+else
+{
+    <p>Hata: Ürün bulunamadı.</p>
+}

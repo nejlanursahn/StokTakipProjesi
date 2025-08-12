@@ -1,0 +1,9 @@
+﻿public ActionResult Sil(int id)
+{
+    var urun = urunler.FirstOrDefault(u => u.Id == id);
+    if (urun == null)
+    {
+        return NotFound();
+    }
+    return View(urun);
+}

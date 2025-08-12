@@ -1,0 +1,10 @@
+﻿@model Urun
+
+<h2>Yeni Ürün Ekle</h2>
+@using (Html.BeginForm())
+{
+    <p>Ad: @Html.TextBoxFor(m => m.Ad)</p>
+    <p>Stok: @Html.TextBoxFor(m => m.Stok)</p>
+    <p>Fiyat: @Html.TextBoxFor(m => m.Fiyat)</p>
+    <input type="submit" value="Ekle" />
+}
